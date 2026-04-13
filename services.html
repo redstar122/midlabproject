@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Menu | La Figlia Caffé</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><img src="images/logo.jpg" alt="La Figlia Caffé Logo" style="height: 40px; width: 40px; border-radius: 50%; margin-right: 10px; object-fit: cover;"> La Figlia Caffé</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services/Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events & Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-cafe-brown text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Our Menu</h1>
+            <p class="lead">Select a category below to explore our offerings.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            
+            <ul class="nav nav-pills justify-content-center mb-5 custom-menu-tabs" id="menu-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="classic-tab" data-bs-toggle="pill" data-bs-target="#classic-menu" type="button" role="tab">Classic Home Menu</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pasta-tab" data-bs-toggle="pill" data-bs-target="#pasta-menu" type="button" role="tab">Pasta Menu</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specials-tab" data-bs-toggle="pill" data-bs-target="#specials-menu" type="button" role="tab">The Big Four Specials</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks-menu" type="button" role="tab">Drinks</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="menu-tabs-content">
+                
+                <div class="tab-pane fade show active" id="classic-menu" role="tabpanel">
+                    <div class="row g-4">
+                        
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/sisig.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Sisig">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Sisig</h5>
+                                    <p class="card-text text-muted">Authentic Kapampangan Sisig</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/sinigang.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Pork Sinigang">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Pork Sinigang</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/binagoongan.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Pork Binagoongan">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Pork Binagoongan</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/tokwat.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Pork Tofu">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Pork Tofu</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/bicol.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Bicol Express">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Bicol Express</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/kilawin.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Kilawin">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Kilawin</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/kaldereta.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Kaldareta">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Kaldareta</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                    <span class="badge bg-danger fs-6">₱125.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/sweetnsour.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Sweet and Sour">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Sweet and Sour</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱85.00</span>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/lumpia.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Lumpia Shanghai">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Lumpia Shanghai</h5>
+                                    <p class="card-text text-muted">A brief explanation highlighting why this is popular among locals.</p>
+                                    <span class="badge bg-danger fs-6">₱30.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/karekare.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Pork Kare-Kare">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Pork Kare-Kare</h5>
+                                    <p class="card-text text-muted">The premium offering for customers looking for the best experience.</p>
+                                    <span class="badge bg-danger fs-6">₱95.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pasta-menu" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/carbo.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Carbonara">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Creamy Carbonara</h5>
+                                    <p class="card-text text-muted">Pasta with hickory smoked bacon and luscious sauce made form thick cream, cheese and spices.</p>
+                                    <span class="badge bg-danger fs-6">₱170.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/spicy.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Carbonara">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Spicy Peanut Noodles</h5>
+                                    <p class="card-text text-muted">Creamy, spicy peanut sauce tossed with noodles and bacon bits - sweet, savory and bold in every bite.</p>
+                                    <span class="badge bg-danger fs-6">₱170.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/beef.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Carbonara">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Shedded Beef Ragu</h5>
+                                    <p class="card-text text-muted">Slow-cooked, tender beef in a savory tomato sauce, herbs and cheese.</p>
+                                    <span class="badge bg-danger fs-6">₱170.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/cajun.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Carbonara">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Cajun Seafood</h5>
+                                    <p class="card-text text-muted">A luscious, creamy Cajun pasta tossed with succulent shrimp and infused with rich, savory and pasta.</p>
+                                    <span class="badge bg-danger fs-6">₱180.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/sausage.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Carbonara">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Sausage & Pepper</h5>
+                                    <p class="card-text text-muted">Sliced Italian sausage sauteed with bell peppers and onions, tossed with pasta in a rich tomato sauce and cream.</p>
+                                    <span class="badge bg-danger fs-6">₱170.00</span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="images/almond.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Carbonara">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">Chicken Almond Pesto</h5>
+                                    <p class="card-text text-muted">Chicken cooked in olive oil and pesto sauce, tossed with nutty almond flakes.</p>
+                                    <span class="badge bg-danger fs-6">₱180.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="specials-menu" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="https://via.placeholder.com/400x250" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Special Drink">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">PASSION FRUIT TEA</h5>
+                                    <p class="card-text text-muted">A stimulating beverage made with brewed tea mixed with passion fruit juice.This drink has a sweet and tangy taste, making it a popular choice for those looking for a fruity and refreshing beverage.</p>
+                                    <span class="badge bg-danger fs-6">₱100.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="https://via.placeholder.com/400x250" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Special Drink">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">MANGO DRAGONFRUIT</h5>
+                                    <p class="card-text text-muted">It's a colorful and flavorful beverage made with a blend of mango juice, dragonfruit and served over ice mixed with lemonade to create a refreshing and sweet-tart taste. It's a popular choice for those seeking a tropical and exotic flavor profile.</p>
+                                    <span class="badge bg-danger fs-6">₱100.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="https://via.placeholder.com/400x250" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Special Drink">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">GRAPEFRUIT GRENADINE</h5>
+                                    <p class="card-text text-muted">This tropical twist combines the tartness of grapefruit juice with the sweetness of grenadine syrup, all mixed with refreshing coconut water as a light and hydrating base It's served over ice and garnished with a slice of grapefruit or a sprig of mint for added freshness.</p>
+                                    <span class="badge bg-danger fs-6">₱100.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="https://via.placeholder.com/400x250" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Special Drink">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title fw-bold">KIWI LEMONADE</h5>
+                                    <p class="card-text text-muted">It's a refreshing beverage crafted by combining freshly squeezed lemon juice and sparkling water with pureed kiwi fruit. Served over ice, this vibrant drink offers a perfect balance of sweet and sour, making it a delightful choice for quenching your thirst on a sunny day.</p>
+                                    <span class="badge bg-danger fs-6">₱100.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="drinks-menu" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="menu-item pb-3 mb-3 border-bottom">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Salted Caramel</h5>
+                                    <span class="text-danger fw-bold fs-5">₱150.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">French Vanilla</h5>
+                                    <span class="text-danger fw-bold fs-5">₱150.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Ube Creme</h5>
+                                    <span class="text-danger fw-bold fs-5">₱150.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Java Chips</h5>
+                                    <span class="text-danger fw-bold fs-5">₱150.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Cookies & Creme</h5>
+                                    <span class="text-danger fw-bold fs-5">₱150.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Strawberries & Creme</h5>
+                                    <span class="text-danger fw-bold fs-5">₱150.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Americano (hot/iced)</h5>
+                                    <span class="text-danger fw-bold fs-5">₱90/100.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0"></h5>
+                                    <span class="text-danger fw-bold fs-5">₱80.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Iced Coffee</h5>
+                                    <span class="text-danger fw-bold fs-5">₱80.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold mb-0">Iced Coffee</h5>
+                                    <span class="text-danger fw-bold fs-5">₱80.00</span>
+                                </div>
+                                <p class="text-muted small mb-0 mt-1">Perfectly brewed cold coffee.</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-custom py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <a href="https://web.facebook.com/profile.php?id=100064023850312" target="_blank" class="text-white me-3" style="font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lafigliacaffe?igsh=OGhwcjQxeGR0eXFm" target="_blank" class="text-white me-3" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@benseangwyn2512" target="_blank" class="text-white" style="font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <p class="mb-1"> 2026 La Figlia Caffé. All Rights Reserved.</p>
+                    <p class="small text-white">Midterm Lab Project | Created by IT students in University of the Assumption</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-white fw-bold">La Figlia Caffé</h5>
+                    <p class="text-white">A warm and inviting café in the heart of Pampanga, offering specialty drinks, delicious food, and a relaxing atmosphere for every guest.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
