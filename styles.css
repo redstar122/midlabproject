@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap');
 
 /* Overall Website Background */
 body {
@@ -7,38 +7,42 @@ body {
     background-color: #f4ebd8; /* Soft cream brown */
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
 /* Navbar Styles */
 .navbar-custom {
     background-color: #5a3e1d; /* Rich coffee brown */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .navbar-custom .navbar-brand {
-    color: #f4ebd8 !important; /* Cream color for the logo text */
+    color: #f4ebd8 !important;
 }
 .navbar-custom .navbar-brand:hover {
     color: #ffffff !important;
 }
 .navbar-custom .nav-link {
     font-weight: 600;
-    color: #e0d0b8 !important; /* Light tan/cream for links */
+    color: #e0d0b8 !important;
     transition: color 0.3s ease;
 }
 .navbar-custom .nav-link:hover,
 .navbar-custom .nav-link.active {
-    color: #ffffff !important; /* Pure white when hovering or active */
+    color: #ffffff !important;
 }
 
 /* Hero Section */
-/* Hero Section */
 .hero-section {
-    height: 60vh;         /* Forces the height to 60% of the screen */
-    min-height: 400px;    /* Prevents it from getting too small on phones */
-    overflow: hidden;     /* Keeps the images contained */
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
     background-size: cover;
     display: flex;
     align-items: center;
-    text-align: left; 
-    color:  #ffffff;
+    text-align: left;
+    color: #ffffff;
 }
 
 .hero-content {
@@ -56,6 +60,21 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Cards & Testimonials */
+.testimonial-card-style {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.testimonial-card-style:hover {
+    transform: translateY(-5px);
+}
+.testimonial-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
 .custom-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
@@ -66,12 +85,7 @@ body {
     box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
-.footer-custom {
-    background-color: #653d23;
-    color: #ddd;
-    padding: 40px 0 20px;
-}
-
+/* Menu Page Styles */
 .custom-menu-tabs .nav-link {
     color: #333;
     font-weight: 600;
@@ -80,62 +94,89 @@ body {
     padding: 10px 25px;
     transition: all 0.3s ease;
 }
-
-.custom-menu-tabs .nav-link:hover {
-    background-color: #f8f9fa; 
-}
-
 .custom-menu-tabs .nav-link.active {
-    background-color: #805d31; 
+    background-color: #805d31;
     color: white;
 }
 
-.about-img {
-    height: 400px; 
-    width: 100%;
-    object-fit: cover; 
-    object-position: center; 
+/* FAQ Accordion Styling - FIXED & CLEANED */
+.accordion-item {
+    background-color: transparent !important;
+    border: none !important;
+    margin-bottom: 10px;
 }
 
-/* Custom Styles for the FAQ Accordion */
-#faqAccordion .accordion-item {
-    background-color: #8b622e; /* Lighter brown for the answer area */
-    border: 1px solid #432e15;
-    color: #ffffff;
+.accordion-button {
+    background-color: #432e15 !important; /* Cream when closed */
+    color: #ddb789 !important; /* Brown text */
+    font-weight: bold;
+    border: 1px solid #432e15 !important;
+    border-radius: 5px !important;
 }
 
-#faqAccordion .accordion-button {
-    background-color: #5a3e1d; /* Darker brown for the question */
-    color: #ffffff;
+/* When the FAQ is OPEN */
+.accordion-button:not(.collapsed) {
+    background-color: #f4ebd8 !important; /* Brown when open */
+    color: #80602d !important; /* White text */
+    box-shadow: none !important;
 }
 
-#faqAccordion .accordion-button:not(.collapsed) {
-    background-color: #432e15; /* Even darker when clicked/open */
-    color: #ffffff;
-    box-shadow: none;
+/* Removes the blue/white highlight on mobile tap */
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
 }
 
-#faqAccordion .accordion-button:focus {
-    border-color: #8b622e;
-    box-shadow: 0 0 0 0.25rem rgba(113, 78, 36, 0.5);
-}
-
-/* Make the dropdown arrow white so it's visible on dark brown */
-#faqAccordion .accordion-button::after {
+/* Changes the little arrow color to white when open */
+.accordion-button:not(.collapsed)::after {
     filter: brightness(0) invert(1);
 }
 
-
-
-.bg-cafe-brown {
-    background-color: #95745a 
+.accordion-body {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0 0 5px 5px;
 }
 
-header{
-    background-color: #8b622e;
+/* Footer */
+.footer-custom {
+    background-color: #653d23;
+    color: #ddd;
+    padding: 40px 0 20px;
 }
 
+/* Helper Classes */
+.bg-cafe-brown { background-color: #6d4d35; }
 
-section {
-    background-color: #f4ebd8;
+/* Responsive Media Query */
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    /* Shrinks the "Welcome to La Figlia Caffé" text */
+    .hero-content h1 {
+        font-size: 2rem !important; /* Smaller size for mobile */
+        line-height: 1.2;
+    }
+
+    /* Shrinks the sub-text below the title */
+    .hero-content p.lead {
+        font-size: 1rem !important;
+        margin-top: 10px;
+    }
+
+    /* Adjusts the button size so it fits better */
+    .hero-content .btn-lg {
+        padding: 10px 30px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+/* New class for the subtle grid background pattern */
+.grid-pattern-overlay {
+    /* Use 'linear-gradient' to overlay the color and the image at the same time */
+    background: 
+        linear-gradient(rgba(108, 82, 51, 0.9), rgba(108, 82, 51, 0.9)), 
+        url('images/grid-bg.png');
+    
+    background-repeat: repeat;
+    background-size: 100px; /* Adjust this to make the grid squares bigger or smaller */
 }
